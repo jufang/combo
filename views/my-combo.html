@@ -1,0 +1,15 @@
+{% extends 'widget/layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block head %}
+{% parent %}
+    <link rel="stylesheet" href="/??/stylesheets/foo.css,stylesheets/bar.css,stylesheets/baz.css">
+{% endblock %}
+
+{% block content %}
+	<h1>{{title}}</h1>
+    <p>Welcome to {{title}}</p>
+   	<script type="text/javascript" src="/javascripts/jquery.js"></script>
+   	<script type="text/javascript" src="/??/javascripts/foo.js,javascripts/bar.js,javascripts/baz.js"></script>
+{% endblock %}
